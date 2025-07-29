@@ -15,7 +15,7 @@ pipeline {
         stage('Checkout Repository') {
             steps {
                 echo 'Cloning the GitHub repository...'
-                git branch : 'main',url: ''
+                git branch : 'main',url: 'https://github.com/rupeena0805/jenkins-project.git'
             }
         }
         stage('Install Dependencies') {
